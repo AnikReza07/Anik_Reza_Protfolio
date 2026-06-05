@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md Anik Reza</title>
+  <meta name="description"
+    content="Md Anik Reza is a Backend Developer specializing in Python Django, Software Support Engineer based in Dhaka, Bangladesh.">
+  <meta property="og:title" content="Md Anik Reza — Backend Developer">
+  <meta property="og:description"
+    content="Dedicated Backend Developer specializing in Python Django with experience in software support, healthcare software systems, and web application development.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ======= SCROLL PROGRESS ======= -->
+  <div id="scroll-progress"></div>
+
+  <!-- ======= CURSOR ======= -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- ======= LOADER ======= -->
+  <div id="loader">
+    <div class="loader-text">Anik Reza</div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav>
+    <a class="nav-logo" href="#home">AR.</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" onclick="closeNav()">Home</a></li>
+      <li><a href="#about" onclick="closeNav()">About</a></li>
+      <li><a href="#experience" onclick="closeNav()">Experience</a></li>
+      <li><a href="#skills" onclick="closeNav()">Skills</a></li>
+      <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+      <li><a href="#education" onclick="closeNav()">Education</a></li>
+      <li><a href="#certification" onclick="closeNav()">Certification</a></li>
+      <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-btn" id="themeBtn" title="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <a class="cv-btn" href="javascript:void(0)" onclick="downloadCV()">
+        <i class="fas fa-download"></i> Download CV
+      </a>
+      <div class="hamburger" id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <section id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <canvas id="particles-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name">MD ANIK<br><span>REZA</span></h1>
+        <div class="hero-titles">
+          <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-bio">
+          I am a motivated IT professional with hands-on experience in software support, system troubleshooting, and
+          user assistance. Currently working as a Software Support Engineer, I have developed strong analytical and
+          problem-solving skills through supporting healthcare software solutions. I am eager to expand my expertise in
+          Software Quality Assurance (QA) and software development processes.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="mailto:anikreza007@gmail.com">
+            <i class="fas fa-paper-plane"></i> Hire Me
+          </a>
+          <a class="btn-secondary" href="#contact">
+            <i class="fas fa-comment"></i> Contact Me
+          </a>
+          <a class="btn-secondary" href="javascript:void(0)" onclick="downloadCV()">
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="profile-card">
+          <div class="profile-glow"></div>
+          <div class="profile-ring"></div>
+          <img id="profilePhoto" src="./image/profile.jpg" alt="Md Anik Reza" class="profile-photo"
+            onerror="this.style.display='none'; document.getElementById('profilePlaceholder').style.display='flex';">
+          <div class="profile-placeholder" id="profilePlaceholder" style="display:none; position:absolute; inset:0;">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      Scroll Down
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT ======= -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Who I <span>Am</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="about-text">
+            <p>I am a dedicated Backend Developer specializing in Python Django, with a strong background
+              in web development and healthcare software support. Over the past few years, I have gained
+              valuable experience working on various projects and entrepreneurial ventures that have honed
+              my problem-solving skills and technical abilities.</p>
+            <p>Currently working as Jr. Software Support Engineer at Lucid Tech, a software company
+              specializing in medical solutions. I thrive in collaborative environments and am committed
+              to growing my expertise in software development.</p>
+            <div class="about-highlight">
+              <span class="tag"><i class="fas fa-circle"></i> Backend Engineering</span>
+              <span class="tag"><i class="fas fa-circle"></i> Python Django</span>
+              <span class="tag"><i class="fas fa-circle"></i> Healthcare Software</span>
+              <span class="tag"><i class="fas fa-circle"></i> Problem Solving</span>
+              <span class="tag"><i class="fas fa-circle"></i> Open to Work</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards reveal">
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-user"></i></div>
+            <div>
+              <div class="info-label">Full Name</div>
+              <div class="info-value">Md Anik Reza</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="info-label">Location</div>
+              <div class="info-value">Mirpur, Dhaka, Bangladesh</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-briefcase"></i></div>
+            <div>
+              <div class="info-label">Current Role</div>
+              <div class="info-value">Jr. Software Support Engineer @ Lucid Tech</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <div class="info-label">Education</div>
+              <div class="info-value">BSc in CSE (Running)</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="info-label">Email</div>
+              <div class="info-value">anikreza007@gmail.com</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="info-label">Phone</div>
+              <div class="info-value">+8801308965689</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= STATS ======= -->
+  <div id="stats">
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <span class="stat-num" data-count="2" data-suffix="+">0</span>
+        <div class="stat-label">Years of Learning</div>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-num" data-count="8" data-suffix="+">0</span>
+        <div class="stat-label">Technologies Known</div>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-num" data-count="3" data-suffix="+">0</span>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-num" data-count="1" data-suffix="">0</span>
+        <div class="stat-label">Certifications Earned</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= SKILLS ======= -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">Expertise</div>
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <p class="section-desc">A blend of technical proficiency and collaborative soft skills built through hands-on
+          experience.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="reveal">
+          <div class="skills-group">
+            <h3>Technical Skills</h3>
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">Python</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">Django</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">HTML & CSS</span><span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">Bootstrap</span><span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="78"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">GitHub</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">Data Entry & MS Word</span><span
+                  class="skill-pct">90%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="skills-group">
+            <h3>Soft Skills</h3>
+            <div class="soft-skills">
+              <div class="soft-tag"><i class="fas fa-comments"></i> Communication</div>
+              <div class="soft-tag"><i class="fas fa-tasks"></i> Organizing</div>
+              <div class="soft-tag"><i class="fas fa-users"></i> Team Building</div>
+              <div class="soft-tag"><i class="fas fa-bolt"></i> Quick Learner</div>
+              <div class="soft-tag"><i class="fas fa-puzzle-piece"></i> Problem Solving</div>
+              <div class="soft-tag"><i class="fas fa-handshake"></i> Collaboration</div>
+              <div class="soft-tag"><i class="fas fa-brain"></i> Critical Thinking</div>
+              <div class="soft-tag"><i class="fas fa-clock"></i> Time Management</div>
+            </div>
+          </div>
+          <div class="skills-group" style="margin-top: 2rem;">
+            <h3>Languages</h3>
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">Bengali (Native)</span><span
+                  class="skill-pct">100%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="100"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">English (Intermediate)</span><span
+                  class="skill-pct">55%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="55"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= EXPERIENCE ======= -->
+  <section id="experience" style="background: var(--bg-secondary); border-top: 1px solid var(--border);">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">Work History</div>
+        <h2 class="section-title">My <span>Experience</span></h2>
+        <p class="section-desc">Building expertise through real-world experience in healthcare software support and
+          technical engineering.</p>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-role">Jr. Software Support Engineer</div>
+              <div class="timeline-badge">Current</div>
+            </div>
+            <div class="timeline-company">Lucid Tech — Kakrail, Dhaka</div>
+            <div class="timeline-date">October 2024 — Present</div>
+            <ul class="timeline-duties">
+              <li>Providing technical support for Hospital Management Systems (HMS) and Laboratory Information Systems
+                (LIS)</li>
+              <li>Troubleshooting and resolving software issues for end users</li>
+              <li>Assisting users with system navigation and feature usage</li>
+              <li>Communicating requirements and updates between users and software engineers</li>
+              <li>Liaising with senior officials to ensure seamless software operations</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-role">Software Support (HMS)</div>
+              <div class="timeline-badge">3 Months</div>
+            </div>
+            <div class="timeline-company">Combined Military Hospital (CMH) — Bogura</div>
+            <div class="timeline-date">Duration: 3 Months</div>
+            <ul class="timeline-duties">
+              <li>Provided technical support for Hospital Management Systems (HMS)</li>
+              <li>Supported internal software applications across hospital departments</li>
+              <li>Assisted staff with system troubleshooting and issue resolution</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-role">Technical Support Engineer</div>
+              <div class="timeline-badge">2 Months</div>
+            </div>
+            <div class="timeline-company">Shaheed Ziaur Rahman Medical College Hospital — Bogura</div>
+            <div class="timeline-date">Duration: 2 Months</div>
+            <ul class="timeline-duties">
+              <li>Provided technical support for HMS and Laboratory Information Systems (LIS)</li>
+              <li>Maintained and supported internal software applications</li>
+              <li>Ensured system stability and user assistance across hospital departments</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PROJECTS ======= -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <p class="section-desc">Hands-on projects demonstrating backend development skills and real-world applications.
+        </p>
+      </div>
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="django">Django</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal" data-tags="django,backend,web">
+          <div class="project-img">
+            <div class="project-img-icon">🛒</div>
+          </div>
+          <div class="project-body">
+            <div class="project-title">E-Commerce Website Development</div>
+            <p class="project-desc">Developed a full-featured web-based e-commerce platform during industrial training
+              using Python Django. Includes product management, cart system, and admin dashboard.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a class="project-link primary" href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <a class="project-link" href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= EDUCATION ======= -->
+  <section id="education" style="background: var(--bg-secondary); border-top: 1px solid var(--border);">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">Academic</div>
+        <h2 class="section-title">My <span>Education</span></h2>
+        <p class="section-desc">Academic foundation built through focused study in computer science and technology.</p>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div class="edu-degree">BSc in Computer Science & Engineering</div>
+          <div class="edu-school">Northern University Bangladesh</div>
+          <div class="edu-meta">
+            <div class="edu-badge"><i class="fas fa-calendar"></i> June 2025 — Running</div>
+            <div class="edu-badge"><i class="fas fa-map-marker-alt"></i> Ashkona, Dhaka</div>
+            <div class="edu-badge"
+              style="background:rgba(34,197,94,0.1);color:#22c55e;border-color:rgba(34,197,94,0.2)">
+              <i class="fas fa-circle"></i> In Progress
+            </div>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+          <div class="edu-degree">Diploma in Computer Technology</div>
+          <div class="edu-school">National Polytechnic Institute, Dhaka</div>
+          <div class="edu-meta">
+            <div class="edu-badge"><i class="fas fa-calendar"></i> July 2019 — Dec 2023</div>
+            <div class="edu-badge"><i class="fas fa-map-marker-alt"></i> Framgate, Dhaka</div>
+            <div class="edu-badge"
+              style="background:var(--accent-glow);color:var(--accent);border-color:rgba(124,58,237,0.2)">
+              <i class="fas fa-star"></i> CGPA 3.52 / 4.00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CERTIFICATION ======= -->
+  <section id="certification">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">Credentials</div>
+        <h2 class="section-title">My <span>Certifications</span></h2>
+        <p class="section-desc">Professional certifications validating real-world backend development skills.</p>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-ribbon">Verified</div>
+          <div class="cert-icon"><i class="fab fa-python"></i></div>
+          <div class="cert-name">Python Back End Development (Python with Django)</div>
+          <div class="cert-institute">Creative IT Institute</div>
+          <div class="cert-date"><i class="fas fa-calendar"></i> 16 Aug 2023 — 15 Nov 2023</div>
+          <div class="cert-topics">
+            <span class="cert-topic">Python Basics</span>
+            <span class="cert-topic">Problem Solving</span>
+            <span class="cert-topic">Django Framework</span>
+            <span class="cert-topic">Admin Panel</span>
+            <span class="cert-topic">E-commerce Project</span>
+            <span class="cert-topic">Git & GitHub</span>
+            <span class="cert-topic">PyCharm / VS Code</span>
+          </div>
+          <a class="btn-secondary" href="#" style="font-size:0.85rem;padding:0.6rem 1.2rem;justify-content:center;">
+            <i class="fas fa-eye"></i> View Certificate
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= TECH STACK ======= -->
+  <div id="techstack">
+    <div class="section-inner" style="padding: 3rem 0;">
+      <div class="reveal" style="text-align: center; margin-bottom: 0.5rem;">
+        <div class="section-label" style="justify-content: center;">Tech Stack</div>
+        <h2 class="section-title" style="text-align: center;">Tools I <span>Work With</span></h2>
+      </div>
+      <div class="tech-marquee reveal">
+        <div class="tech-track">
+          <div class="tech-item">
+            <div class="tech-logo">🐍</div>
+            <div class="tech-name">Python</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">🌿</div>
+            <div class="tech-name">Django</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">🌐</div>
+            <div class="tech-name">HTML5</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">🎨</div>
+            <div class="tech-name">CSS3</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">🅱️</div>
+            <div class="tech-name">Bootstrap</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">🐙</div>
+            <div class="tech-name">GitHub</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">📊</div>
+            <div class="tech-name">Data Entry</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">📝</div>
+            <div class="tech-name">MS Word</div>
+          </div>
+          <!-- Duplicate for seamless infinite loop -->
+          <div class="tech-item">
+            <div class="tech-logo">🐍</div>
+            <div class="tech-name">Python</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">🌿</div>
+            <div class="tech-name">Django</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">🌐</div>
+            <div class="tech-name">HTML5</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">🎨</div>
+            <div class="tech-name">CSS3</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">🅱️</div>
+            <div class="tech-name">Bootstrap</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">🐙</div>
+            <div class="tech-name">GitHub</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">📊</div>
+            <div class="tech-name">Data Entry</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">📝</div>
+            <div class="tech-name">MS Word</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= SERVICES ======= -->
+  <section id="services">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">What I Offer</div>
+        <h2 class="section-title">My <span>Services</span></h2>
+        <p class="section-desc">Professional services tailored to deliver scalable, reliable backend solutions and
+          technical support.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-server"></i></div>
+          <div class="service-title">Backend Development</div>
+          <p class="service-desc">Building robust, scalable server-side applications with clean architecture and best
+            practices.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fab fa-python"></i></div>
+          <div class="service-title">Django Development</div>
+          <p class="service-desc">Full-stack Django web applications from database design to REST APIs and admin
+            dashboards.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-tools"></i></div>
+          <div class="service-title">Website Maintenance</div>
+          <p class="service-desc">Keeping websites updated, secure, and performing optimally with ongoing technical
+            support.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-headset"></i></div>
+          <div class="service-title">Software Support</div>
+          <p class="service-desc">End-to-end software support including HMS, LIS, and enterprise application assistance.
+          </p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-bug"></i></div>
+          <div class="service-title">Technical Troubleshooting</div>
+          <p class="service-desc">Diagnosing and resolving complex technical issues quickly and efficiently to minimize
+            downtime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section id="contact" style="background: var(--bg-secondary); border-top: 1px solid var(--border);">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <p class="section-desc">Have a project in mind or want to discuss opportunities? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a class="contact-card" href="tel:+8801308965689">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-val">+8801308965689</div>
+            </div>
+          </a>
+          <a class="contact-card" href="mailto:anikreza007@gmail.com">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-val">anikreza007@gmail.com</div>
+            </div>
+          </a>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-val">Mirpur, Dhaka, Bangladesh</div>
+            </div>
+          </div>
+          <div>
+            <div
+              style="font-size:0.82rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem;">
+              Follow Me</div>
+            <div class="social-row">
+              <!-- Replace # with your actual social media profile links -->
+              <a class="social-btn" href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a class="social-btn" href="https://linkedin.com/in/md-anik-reza369/" target="_blank" title="LinkedIn"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a class="social-btn" href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a class="social-btn" href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a class="social-btn" href="#" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+              <a class="social-btn" href="https://wa.me/8801308965689" target="_blank" title="WhatsApp"><i
+                  class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="cName">Name</label>
+              <input type="text" id="cName" placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label for="cEmail">Email</label>
+              <input type="email" id="cEmail" placeholder="your@email.com">
+            </div>
+            <div class="form-group full">
+              <label for="cSubject">Subject</label>
+              <input type="text" id="cSubject" placeholder="What's this about?">
+            </div>
+            <div class="form-group full">
+              <label for="cMsg">Message</label>
+              <textarea id="cMsg" placeholder="Tell me about your project or opportunity..."></textarea>
+            </div>
+          </div>
+          <button class="btn-primary form-submit" onclick="submitForm()">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-msg" id="formMsg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">MD ANIK REZA</div>
+          <p>Backend Developer & Python Django Engineer based in Dhaka, Bangladesh. Open to software engineering and
+            support roles globally.</p>
+          <div class="social-row" style="margin-top: 1rem;">
+            <a class="social-btn" href="https://www.facebook.com/anik.reza.369" target="_blank"><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="social-btn" href="https://linkedin.com/in/md-anik-reza369/" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a class="social-btn" href="https://github.com/AnikReza07" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="social-btn" href="https://www.instagram.com/anik.reza.359/?hl=en" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4>
+          <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0)" onclick="downloadCV()">Download CV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Md Anik Reza. All rights reserved.</p>
+        <div class="footer-social">
+          <a class="social-btn" href="https://linkedin.com/in/md-anik-reza369/" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a class="social-btn" href="https://github.com/AnikReza07" target="_blank"><i class="fab fa-github"></i></a>
+          <a class="social-btn" href="mailto:anikreza007@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======= SCROLL TO TOP ======= -->
+  <button id="scrolltop" onclick="scrollToTop()" title="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- CV Data (Base64 Embedded) -->
+  <script src="cv-data.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
