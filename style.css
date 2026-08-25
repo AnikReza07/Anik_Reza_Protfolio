@@ -976,6 +976,54 @@ section {
   transition: all var(--transition);
 }
 
+.timeline-current .timeline-card {
+  background: linear-gradient(135deg, var(--bg-card-hover), var(--bg-card));
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent-glow), 0 14px 30px var(--accent-2-glow);
+}
+
+.timeline-current .timeline-dot {
+  width: 20px;
+  height: 20px;
+  left: -2.57rem;
+  top: 0.55rem;
+  box-shadow: 0 0 0 5px var(--bg-primary), 0 0 22px var(--accent-glow);
+}
+
+.timeline-current .timeline-badge {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+
+.timeline-previous .timeline-card {
+  border-color: rgba(136, 146, 176, 0.22);
+}
+
+.timeline-previous .timeline-dot {
+  background: var(--text-muted);
+  box-shadow: 0 0 0 4px var(--bg-primary);
+}
+
+.timeline-previous .timeline-badge {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border-color: var(--border);
+}
+
+.timeline-last-day {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.timeline-last-day i {
+  color: var(--accent);
+}
+
 .timeline-card:hover {
   border-color: var(--border-hover);
   background: var(--bg-card-hover);
