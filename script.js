@@ -4,16 +4,12 @@
 
 // ========== CV DOWNLOAD ==========
 function downloadCV() {
-  if (typeof CV_BASE64 !== 'undefined') {
-    const link = document.createElement('a');
-    link.href = CV_BASE64;
-    link.download = 'Md_Anik_Reza_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  } else {
-    alert('CV file not found. Please contact: anikreza007@gmail.com');
-  }
+  const link = document.createElement('a');
+  link.href = './Anik_Reza.pdf';
+  link.download = 'Anik_Reza.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
 
 // ========== LOADER ==========
